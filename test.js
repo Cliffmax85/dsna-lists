@@ -33,12 +33,13 @@ console.log("alchemy ROCKS goLD");
 function fizzBuzz(number) {
     let fizzy = [];
     for (let i = 1; i <= number; i++) {
-        if (i % 3 === 0) {
-            fizzy.push('fizz')
+        if (i % 15 === 0) {
+            fizzy.push('FizzBuzz'); 
+        } if (i % 3 === 0) {
+            fizzy.push('fizz');
         } if (i % 5 === 0) {
-            fizzy.push('buzz')
-        } if (i % 15 === 0) {
-            fizzy.push('FizzBuzz')
+            fizzy.push('buzz');
+        } 
         } else {
             fizzy.push(i);
         }
