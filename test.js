@@ -18,6 +18,18 @@ function oddishOrEvenish(number) {
     }
 }
 
+function titleCase(sentence) {
+  const lowerCase = sentence.toLowerCase();
+  const words = lowerCase
+    .split(" ")
+    .map((item) => {
+      item.slice(0, 1).toUpperCase();
+    })
+    .join(" ");
+  return words;
+}
+console.log("alchemy ROCKS goLD");
+
 function fizzBuzz(number) {
     let fizzy = [];
     for (let i = 1; i <= number; i++) {
